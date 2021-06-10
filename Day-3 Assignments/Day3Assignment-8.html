@@ -1,0 +1,32 @@
+<--Create an input that reads form the data list through the select tag display the data in the paragraph tag of HTML -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>data listdemo</title>
+<style>
+	p{
+		color:red;
+	}
+</style>
+</head>
+<body>
+<label>enter your favourite cricket player:</label> <br/>
+<input type="text" id="fav" list="cplayers">
+<datalist id="cplayers">
+<option value="dhoni"/>
+<option value="virat"/>
+<option value="abd"/>
+</datalist><br/><br/>
+<button onclick="readData()">submit</button>
+<p id="result"></p>
+<script>
+ function readData(){
+ 
+var fav=document.getElementById('fav').value;
+document.getElementById('result').innerHTML=fav;
+
+
+ }
+ </script>
+</body>
+</html>
