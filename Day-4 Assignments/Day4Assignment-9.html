@@ -1,0 +1,24 @@
+<!--Assignment - 9: Write your name on Canvas using HTML and Javascript-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>canvas using html and javascript</title>
+</head>
+<body style="text-align: center;">
+	<h1>Name in canvas</h1>
+<canvas id="can" width="300" height="200" style="border: 2px solid #a1b1f1;"></canvas>
+<script type="text/javascript">
+	var c=document.getElementById('can');
+	ctx=c.getContext("2d");
+	ctx.font="30px Arial";
+	ctx.fillText("shaik moulana",30,100);
+
+</script>
+
+
+
+</body>
+
+</html>
